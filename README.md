@@ -18,3 +18,9 @@ Search for TV shows, using the API of www.tvmaze.com
 		"build": "npm run public && npm run build-js && npm run copy-files",
 		"serve": "serve public"
 	}
+
+# Install
+
+npm install   // install dependencies
+npm run build // generate app.js app.css and index.html
+npm run serve // turn on server

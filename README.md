@@ -1,6 +1,10 @@
 # TVify
 Search for TV shows, using the API of www.tvmaze.com
 
+# Link
+
+http://tvify.azurewebsites.net/
+
 # Dependencies
 "dependencies": {
 		"jquery": "^2.1.4",

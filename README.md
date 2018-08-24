@@ -22,5 +22,7 @@ Search for TV shows, using the API of www.tvmaze.com
 # Install
 
 npm install   // install dependencies
+
 npm run build // generate app.js app.css and index.html
+
 npm run serve // turn on server

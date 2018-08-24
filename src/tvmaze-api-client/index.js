@@ -6,7 +6,7 @@ import $ from 'jquery'
 
 export function getShows (fn) {
 	$.ajax('http://api.tvmaze.com/shows', {
-		success: function (data, textStatus, xhr) {
+		success: function (shows, textStatus, xhr) {
 			fn(shows)
 		}
 	}) 

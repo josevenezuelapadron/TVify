@@ -9,6 +9,7 @@ import renderShows from 'src/render'
 import $tvShowsContainer from 'src/tv-shows-container'
 import 'src/search-form'
 import qs from 'qs'
+import swal from 'sweetalert2'
 
 page('/', function (ctx, next) {
 	$tvShowsContainer.find('.tv-show').remove() // se ocultan todos los shows
@@ -38,6 +39,16 @@ page('/search', function (ctx, next) {
 
 		renderShows(shows) // se cargan los shows obtenidos en el documento
 	})
+})
+
+var btnAbout = document.getElementById('about')
+
+btnAbout.addEventListener('click', function () {
+	swal(
+	  'Desarrollado por José Pádrón',
+	  '24/08/2018 v0.1.0 Venezuela https://github.com/josevenezuelapadron/TVify',
+	  'info'
+	)
 })
 
 page()
